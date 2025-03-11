@@ -6,18 +6,18 @@
     <title>Carrossel Automático</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        .carousel-container { 
-            width: 100%; 
-            max-width: 600px; 
-            overflow: hidden; 
-            margin: auto; 
+        .carousel-container {
+            width: 100%;
+            max-width: 600px;
+            overflow: hidden;
+            margin: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
         }
         .carousel {
             display: flex;
-            width: 300%;
-            animation: slide 9s infinite;
+            width: 1100%; /* Ajustado para o número de imagens */
+            animation: slide 22s infinite;
         }
         .carousel img {
             width: 100%;
@@ -25,8 +25,16 @@
         }
         @keyframes slide {
             0% { transform: translateX(0); }
-            33% { transform: translateX(-100%); }
-            66% { transform: translateX(-200%); }
+            9% { transform: translateX(-100%); }
+            18% { transform: translateX(-200%); }
+            27% { transform: translateX(-300%); }
+            36% { transform: translateX(-400%); }
+            45% { transform: translateX(-500%); }
+            54% { transform: translateX(-600%); }
+            63% { transform: translateX(-700%); }
+            72% { transform: translateX(-800%); }
+            81% { transform: translateX(-900%); }
+            90% { transform: translateX(-1000%); }
             100% { transform: translateX(0); }
         }
     </style>
@@ -34,9 +42,17 @@
 <body>
     <div class="carousel-container">
         <div class="carousel">
-            <img src="https://github.com/Blue-ops07/carrossel-imagens/blob/main/logo-Photoroom.png?raw=true" alt="Logo Photoroom" alt="Imagem 1">
-            <img src="https://via.placeholder.com/600x300/33FF57/FFFFFF?text=Imagem+2" alt="Imagem 2">
-            <img src="https://via.placeholder.com/600x300/3357FF/FFFFFF?text=Imagem+3" alt="Imagem 3">
+            <img src="https://github.com/Blue-ops07/carrossel-imagens/blob/main/Logo_da_NUCLEP.png?raw=true" alt="Logo NUCLEP">
+            <img src="https://github.com/Blue-ops07/carrossel-imagens/blob/main/Marca_480.png?raw=true" alt="Marca 480">
+            <img src="https://github.com/Blue-ops07/carrossel-imagens/blob/main/cmd-Photoroom.png?raw=true" alt="CMD Photoroom">
+            <img src="https://github.com/Blue-ops07/carrossel-imagens/blob/main/geap-saude-Photoroom.png?raw=true" alt="GEAP Saúde">
+            <img src="https://github.com/Blue-ops07/carrossel-imagens/blob/main/klini_saude-Photoroom.png?raw=true" alt="Klini Saúde">
+            <img src="https://github.com/Blue-ops07/carrossel-imagens/blob/main/logo-Photoroom.png?raw=true" alt="Logo Photoroom">
+            <img src="https://github.com/Blue-ops07/carrossel-imagens/blob/main/logo-memorial-saude.png?raw=true" alt="Memorial Saúde">
+            <img src="https://github.com/Blue-ops07/carrossel-imagens/blob/main/porto-seguro-logo-0.png?raw=true" alt="Porto Seguro">
+            <img src="https://github.com/Blue-ops07/carrossel-imagens/blob/main/real-grandeza.png?raw=true" alt="Real Grandeza">
+            <img src="https://github.com/Blue-ops07/carrossel-imagens/blob/main/samoc-saude-logo.png?raw=true" alt="Samoc Saúde">
+            <img src="https://github.com/Blue-ops07/carrossel-imagens/blob/main/sulamerica-Photoroom.png?raw=true" alt="SulAmérica">
         </div>
     </div>
 </body>
