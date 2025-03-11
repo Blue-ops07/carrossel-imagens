@@ -6,29 +6,32 @@
     <title>Carrossel Automático</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+        
         .carousel-container {
             width: 100%;
             max-width: 600px;
-            height: 100px;
             overflow: hidden;
             margin: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             position: relative;
             display: flex;
-            align-items: center;
+            justify-content: center;
         }
+
         .carousel {
             display: flex;
             align-items: center;
             animation: slide 22s infinite linear;
         }
+
         .carousel img {
-            height: 80px;
-            width: auto;
+            height: auto;  /* Altura automática para manter a proporção */
+            width: 100%;   /* As imagens vão se ajustar à largura do container */
+            object-fit: contain;  /* A imagem será adaptada para caber no espaço sem deformação */
             flex-shrink: 0;
-            margin-right: 10px;
         }
+
         @keyframes slide {
             0% { transform: translateX(0); }
             100% { transform: translateX(-100%); }
