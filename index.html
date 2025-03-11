@@ -9,28 +9,29 @@
         .carousel-container {
             width: 100%;
             max-width: 600px;
-            height: 150px;
+            height: 100px;
             overflow: hidden;
             margin: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             position: relative;
+            display: flex;
+            align-items: center;
         }
         .carousel {
             display: flex;
             align-items: center;
-            width: calc(150px * 11);
             animation: slide 22s infinite linear;
         }
         .carousel img {
-            height: 100%;
+            height: 80px;
             width: auto;
             flex-shrink: 0;
             margin-right: 10px;
         }
         @keyframes slide {
             0% { transform: translateX(0); }
-            100% { transform: translateX(calc(-150px * 11)); }
+            100% { transform: translateX(-100%); }
         }
     </style>
 </head>
