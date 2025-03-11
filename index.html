@@ -13,14 +13,17 @@
             margin: auto;
             border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            position: relative;
         }
         .carousel {
             display: flex;
-            width: 1100%; /* Ajustado para o número de imagens */
+            width: calc(100% * 11); /* Ajustado para o número de imagens */
             animation: slide 22s infinite;
         }
         .carousel img {
             width: 100%;
+            flex-shrink: 0;
+            min-width: 100%;
             height: auto;
         }
         @keyframes slide {
@@ -57,3 +60,4 @@
     </div>
 </body>
 </html>
+
