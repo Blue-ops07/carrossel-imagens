@@ -9,6 +9,7 @@
         .carousel-container {
             width: 100%;
             max-width: 600px;
+            height: 150px;
             overflow: hidden;
             margin: auto;
             border-radius: 10px;
@@ -17,28 +18,19 @@
         }
         .carousel {
             display: flex;
-            width: calc(100% * 11); /* Ajustado para o número de imagens */
-            animation: slide 22s infinite;
+            align-items: center;
+            width: calc(150px * 11);
+            animation: slide 22s infinite linear;
         }
         .carousel img {
-            width: 100%;
+            height: 100%;
+            width: auto;
             flex-shrink: 0;
-            min-width: 100%;
-            height: auto;
+            margin-right: 10px;
         }
         @keyframes slide {
             0% { transform: translateX(0); }
-            9% { transform: translateX(-100%); }
-            18% { transform: translateX(-200%); }
-            27% { transform: translateX(-300%); }
-            36% { transform: translateX(-400%); }
-            45% { transform: translateX(-500%); }
-            54% { transform: translateX(-600%); }
-            63% { transform: translateX(-700%); }
-            72% { transform: translateX(-800%); }
-            81% { transform: translateX(-900%); }
-            90% { transform: translateX(-1000%); }
-            100% { transform: translateX(0); }
+            100% { transform: translateX(calc(-150px * 11)); }
         }
     </style>
 </head>
@@ -60,4 +52,3 @@
     </div>
 </body>
 </html>
-
